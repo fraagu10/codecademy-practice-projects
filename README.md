@@ -1,8 +1,8 @@
-# codecademy-practice-projects
+# Full-Stack Engineer Codecademy Practice Projects
 
-Just a place for a serious of small projects that codecademy uses during the full stack engineer path. These are the practice projects I have personally worked through during the completion of the path.
+> Just a place for a serious of small projects that codecademy uses during the full stack engineer path. These are the practice projects I have personally worked through during the completion of the path.
 
-## Links
+# Links
 
-Codecademy path ---
-https://www.codecademy.com/career-journey/full-stack-engineer
+Codecademy path 
+- https://www.codecademy.com/career-journey/full-stack-engineer
