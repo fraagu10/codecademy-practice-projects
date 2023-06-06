@@ -19,26 +19,33 @@
     <tr>
       <td>Service Checklist</td>
       <td>
-        <ol>
-          <li>Build a Service (import @Injectable from '@angular/core')</li>
-          <li>Register a Service<br>
-            -Select the appropriate level in the hierarchy<br>
-		        --Root application injector if the service is ujse throughout the application<br>
-		        --Specific component's injector if only that component uses the service<br>
-	        -Service Injectable decorator<br>
-		        --Set the providedIn property to 'root'<br>
-	-Component decorator<br>
-		--Set the providers property to the service<br>
-          </li>
-          <li>
-            Dependency Injection<br>
-            -Specify the service as a dependecy where needed<br>
-            -Use a constructor paramater to inject dependency<br> 
-            -Service is injected when component is instantiated<br>
-          </li>
-        </ol>
+        1. Build a Service
+        <ul>
+          <li>(import @Injectable from '@angular/core')</li>
+        </ul> 
+        2. Register a Service<br>
+        <ul>
+          <li>Select the appropriate level in the hierarchy</li>
+		      <li>Root application injector if the service is ujse throughout the application</li>
+		      <li>Specific component's injector if only that component uses the service</li>
+        </ul>
+	      3. Service Injectable decorator<br>
+        <ul>
+          <li>Set the providedIn property to 'root'</li>
+        </ul>
+		    4. Component decorator<br>
+        <ul>
+          <li>Set the providers property to the service</li>
+        </ul>
+        5. Dependency Injection
+        <ul>
+          <li>Specify the service as a dependecy where needed</li>
+          <li>Use a constructor paramater to inject dependency</li>
+          <li>Service is injected when component is instantiated</li>
+        </ul>
       </td>
     </tr>
+    
     <tr>
       <td>HTTP Checklist</td>
       <td>
