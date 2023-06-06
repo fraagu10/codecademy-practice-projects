@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>Angular Notes</h1>
+<main>
+
+  <table>
+    <tr>
+      <td></td>
+      <td>Checklist</td>
+    </tr>
+    <tr>
+      <td>Service Checklist</td>
+      <td>
+        <ol>
+          <li>Build a Service (import @Injectable from '@angular/core')</li>
+          <li>Register a Service<br>
+            -Select the appropriate level in the hierarchy<br>
+		        --Root application injector if the service is ujse throughout the application<br>
+		        --Specific component's injector if only that component uses the service<br>
+	        -Service Injectable decorator<br>
+		        --Set the providedIn property to 'root'<br>
+	-Component decorator<br>
+		--Set the providers property to the service<br>
+          </li>
+          <li>
+            Dependency Injection<br>
+            -Specify the service as a dependecy where needed<br>
+            -Use a constructor paramater to inject dependency<br> 
+            -Service is injected when component is instantiated<br>
+          </li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>HTTP Checklist</td>
+      <td>
+        1. Setup<br>
+        <ul>
+          <li>Add HttpClientModule to the imports array of one of the application's Angular Modules 
+            (Usually can be done in app.module.ts)
+          </li>
+        </ul>
+        2. Calling HTTP Get<br>
+        <ul>
+          <li>Define a dependency for the Http Client Service in the constructor</li>
+          <li>Create a method for each HTTP request</li>
+          <li>Call the desired HTTP method, such as GET</li>
+          <li>Use generics to specify the returned type</li>
+        </ul>
+        3. Add error handling<br>
+        4. Subscribing<br>
+        <ul>
+          <li>Call subscribe method of the returned observable (Usually on ngOnInit())
+            <aside>ex. this.sub = this.ps.getProducts().subscribe(...)</aside>
+          </li>
+          <li>Provide a function to handle the emitte item</li>
+          <li>Provide a function to handle any returned errors</li>
+        </ul>
+        5. Unsubscribing<br>
+        <ul>
+          <li>Store the subscription in a variable</li>
+          <li>Implement the OnDestroy lifecycle hook</li>
+          <li>Use the subscription variable to unsubscribe</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+</main>
+
+
+</body>
+
+</html>
